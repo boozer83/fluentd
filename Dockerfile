@@ -39,4 +39,4 @@ COPY build.sh /tmp/build.sh
 RUN ["chmod", "+x", "/tmp/build.sh"]
 
 # Run the Fluentd service.
-ENTRYPOINT ["td-agent"]
+ENTRYPOINT ["/etc/init.d/td-agent"]
